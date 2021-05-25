@@ -2,11 +2,13 @@
 <html>
 <body>
 <script>
+var word = prompt("Word Please");
 
-  function pluralize(){
-    word = prompt("Word Please");
-  
-    if(word === "moose"){
+  function pluralize(word){
+   return word + "s";
+   }
+   
+   if(word === "moose"){
       console.log("moose");
     }
 
@@ -17,14 +19,11 @@
     else if(word === "mouse"){
       console.log("mice");
     }
-    
-    else(console.log(word + "s"));{
 
+    else{
+      console.log(pluralize(word));
     }
-
-}
-
-  pluralize();
+   
   
 </script>
 </body>
